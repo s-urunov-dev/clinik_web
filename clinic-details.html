@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediPlus Center - MediFind</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-links">
+                    <div class="left-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="right-links">
+                        <a href="#" class="language"><i class="fas fa-globe"></i> English</a>
+                        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="MediFind Logo">
+                        <span>MediFind</span>
+                    </a>
+                </div>
+                <div class="header-title">
+                    <h1>Medical Centers & Clinics Directory</h1>
+                </div>
+                <div class="header-buttons">
+                    <a href="add-clinic.html" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Add Your
+                        Clinic</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="clinics.html">Clinics</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>MediPlus Center</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Details -->
+    <section class="clinic-details">
+        <div class="container">
+            <div class="clinic-header">
+                <div class="clinic-header-left">
+                    <div class="clinic-logo">
+                        <img src="images/clinic-logo1.png" alt="MediPlus Center Logo">
+                    </div>
+                    <div class="clinic-header-info">
+                        <h1>MediPlus Center</h1>
+                        <div class="clinic-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128 reviews)</span>
+                        </div>
+                        <div class="clinic-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Medical Avenue, Downtown, City</p>
+                        </div>
+                        <div class="clinic-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) 123-4567</span>
+                            <span>+1 (555) 987-6543</span>
+                        </div>
+                        <div class="clinic-hours">
+                            <i class="fas fa-clock"></i>
+                            <div class="hours-details">
+                                <span class="open-now">Open Now</span>
+                                <span>Mon-Fri: 8:00 AM - 8:00 PM</span>
+                                <span>Sat: 9:00 AM - 5:00 PM</span>
+                                <span>Sun: Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clinic-header-right">
+                    <div class="clinic-actions">
+                        <a href="book-appointment.html?clinic=mediplus" class="btn btn-primary"><i
+                                class="fas fa-calendar-check"></i> Book Appointment</a>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline"><i
+                                class="fas fa-directions"></i> Get Directions</a>
+                    </div>
+                    <div class="clinic-promo-badge">
+                        <span class="discount">30% OFF</span>
+                        <span class="promo-text">on first consultation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clinic-gallery">
+                <div class="gallery-main">
+                    <img src="images/clinic1-main.jpg" alt="MediPlus Center" id="main-gallery-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/clinic1-main.jpg" alt="MediPlus Center Main" class="active"
+                        onclick="changeImage('images/clinic1-main.jpg')">
+                    <img src="images/clinic1-reception.jpg" alt="MediPlus Reception"
+                        onclick="changeImage('images/clinic1-reception.jpg')">
+                    <img src="images/clinic1-waiting.jpg" alt="MediPlus Waiting Area"
+                        onclick="changeImage('images/clinic1-waiting.jpg')">
+                    <img src="images/clinic1-exam.jpg" alt="MediPlus Examination Room"
+                        onclick="changeImage('images/clinic1-exam.jpg')">
+                    <img src="images/clinic1-lab.jpg" alt="MediPlus Laboratory"
+                        onclick="changeImage('images/clinic1-lab.jpg')">
+                </div>
+            </div>
+
+            <div class="clinic-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="services">Services</button>
+                    <button class="tab-btn" data-tab="doctors">Doctors</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-btn" data-tab="location">Location</button>
+                </div>
+
+                <!-- Overview Tab -->
+                <div class="tab-pane active" id="overview">
+                    <div class="about-clinic">
+                        <h3>About MediPlus Center</h3>
+                        <p>MediPlus Center is a premier multi-specialty medical facility dedicated to providing
+                            comprehensive healthcare services with a focus on patient comfort and advanced medical
+                            technology. Established in 2005, our center has grown to become one of the most trusted
+                            healthcare providers in the region.</p>
+
+                        <p>Our state-of-the-art facility spans over 25,000 square feet and houses the latest medical
+                            equipment and technology. We pride ourselves on our team of experienced specialists who are
+                            committed to delivering personalized care to each patient.</p>
+
+                        <h4>Our Mission</h4>
+                        <p>To provide exceptional healthcare services that improve the quality of life for our patients
+                            through compassionate care, cutting-edge technology, and evidence-based medical practices.
+                        </p>
+
+                        <h4>Our Approach</h4>
+                        <p>At MediPlus Center, we believe in a patient-centered approach to healthcare. We focus on:</p>
+                        <ul>
+                            <li>Personalized treatment plans tailored to each patient's unique needs</li>
+                            <li>Preventive care and early intervention to maintain optimal health</li>
+                            <li>Continuous education and training for our medical staff</li>
+                            <li>Integration of the latest medical technologies and research</li>
+                            <li>Creating a comfortable and welcoming environment for all patients</li>
+                        </ul>
+                    </div>
+
+                    <div class="clinic-highlights">
+                        <h3>Highlights</h3>
+                        <div class="highlights-grid">
+                            <div class="highlight-item">
+                                <i class="fas fa-user-md"></i>
+                                <h4>Expert Specialists</h4>
+                                <p>25+ board-certified specialists across multiple disciplines</p>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-microscope"></i>
+                                <h4>Advanced Technology</h4>
+                                <p>State-of-the-art diagnostic and treatment equipment</p>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-procedures"></i>
+                                <h4>Modern Facilities</h4>
+                                <p>15 examination rooms and 3 procedure suites</p>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-file-medical-alt"></i>
+                                <h4>Electronic Records</h4>
+                                <p>Secure digital health records for seamless care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Tab -->
+                <div class="tab-pane" id="services">
+                    <h3>Our Services</h3>
+                    <p>MediPlus Center offers a wide range of medical services to meet the diverse healthcare needs of
+                        our patients. Our team of specialists provides comprehensive care across multiple disciplines.
+                    </p>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Cardiology</h4>
+                                <p>Comprehensive heart health services including ECG, echocardiography, stress testing,
+                                    and cardiac consultations.</p>
+                                <div class="service-price">
+                                    <span class="original-price">$200</span>
+                                    <span class="discounted-price">$140</span>
+                                    <span class="discount-badge">30% OFF</span>
+                                </div>
+                                <a href="book-appointment.html?service=cardiology" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Neurology</h4>
+                                <p>Diagnosis and treatment of neurological disorders including headaches, seizures,
+                                    stroke, and neurodegenerative diseases.</p>
+                                <div class="service-price">
+                                    <span class="original-price">$250</span>
+                                    <span class="discounted-price">$175</span>
+                                    <span class="discount-badge">30% OFF</span>
+                                </div>
+                                <a href="book-appointment.html?service=neurology" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-lungs"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Pulmonology</h4>
+                                <p>Evaluation and management of respiratory conditions including asthma, COPD, sleep
+                                    apnea, and pulmonary infections.</p>
+                                <div class="service-price">
+                                    <span class="original-price">$180</span>
+                                    <span class="discounted-price">$126</span>
+                                    <span class="discount-badge">30% OFF</span>
+                                </div>
+                                <a href="book-appointment.html?service=pulmonology" class="btn btn-primary btn-sm">Book
+                                    Now</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>General Medicine</h4>
+                                <p>Primary care services including routine check-ups, preventive care, vaccinations, and
+                                    management of common illnesses.</p>
+                                <div class="service-price">
+                                    <span class="original-price">$150</span>
+                                    <span class="discounted-price">$105</span>
+                                    <span class="discount-badge">30% OFF</span>
+                                </div>
+                                <a href="book-appointment.html?service=general-medicine"
+                                    class="btn btn-primary btn-sm">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-x-ray"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Diagnostic Imaging</h4>
+                                <p>Advanced imaging services including X-rays, ultrasound, CT scans, and MRI for
+                                    accurate diagnosis.</p>
+                                <div class="service-price">
+                                    <span class="original-price">$300</span>
+                                    <span class="discounted-price">$210</span>
+                                    <span class="discount-badge">30% OFF</span>
+                                </div>
+                                <a href="book-appointment.html?service=diagnostic-imaging"
+                                    class="btn btn-primary btn-sm">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Laboratory Services</h4>
+                                <p>Comprehensive laboratory testing including blood work, urinalysis, microbiology, and
+                                    specialized diagnostic tests.</p>
+                                <div class="service-price">
+                                    <span class="original-price">$120</span>
+                                    <span class="discounted-price">$84</span>
+                                    <span class="discount-badge">30% OFF</span>
+                                </div>
+                                <a href="book-appointment.html?service=laboratory-services"
+                                    class="btn btn-primary btn-sm">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctors Tab -->
+                <div class="tab-pane" id="doctors">
+                    <h3>Our Specialists</h3>
+                    <p>MediPlus Center is proud to have a team of highly qualified and experienced medical professionals
+                        dedicated to providing exceptional care to our patients.</p>
+
+                    <div class="doctors-grid">
+                        <div class="doctor-card">
+                            <div class="doctor-image">
+                                <img src="images/doctor1.jpg" alt="Dr. Robert Williams">
+                            </div>
+                            <div class="doctor-content">
+                                <h4>Dr. Robert Williams</h4>
+                                <div class="doctor-specialty">Cardiologist</div>
+                                <div class="doctor-experience">
+                                    <i class="fas fa-briefcase"></i> 15+ years experience
+                                </div>
+                                <div class="doctor-schedule">
+                                    <i class="fas fa-calendar-alt"></i> Mon, Wed, Fri: 9:00 AM - 5:00 PM
+                                </div>
+                                <a href="doctor-profile.html?doctor=dr-williams" class="btn btn-outline btn-sm">View
+                                    Profile</a>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card">
+                            <div class="doctor-image">
+                                <img src="images/doctor2.jpg" alt="Dr. Jennifer Lee">
+                            </div>
+                            <div class="doctor-content">
+                                <h4>Dr. Jennifer Lee</h4>
+                                <div class="doctor-specialty">Neurologist</div>
+                                <div class="doctor-experience">
+                                    <i class="fas fa-briefcase"></i> 12+ years experience
+                                </div>
+                                <div class="doctor-schedule">
+                                    <i class="fas fa-calendar-alt"></i> Tue, Thu: 8:00 AM - 4:00 PM
+                                </div>
+                                <a href="doctor-profile.html?doctor=dr-lee" class="btn btn-outline btn-sm">View
+                                    Profile</a>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card">
+                            <div class="doctor-image">
+                                <img src="images/doctor3.jpg" alt="Dr. Michael Chen">
+                            </div>
+                            <div class="doctor-content">
+                                <h4>Dr. Michael Chen</h4>
+                                <div class="doctor-specialty">Pulmonologist</div>
+                                <div class="doctor-experience">
+                                    <i class="fas fa-briefcase"></i> 10+ years experience
+                                </div>
+                                <div class="doctor-schedule">
+                                    <i class="fas fa-calendar-alt"></i> Mon, Wed, Fri: 10:00 AM - 6:00 PM
+                                </div>
+                                <a href="doctor-profile.html?doctor=dr-chen" class="btn btn-outline btn-sm">View
+                                    Profile</a>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card">
+                            <div class="doctor-image">
+                                <img src="images/doctor4.jpg" alt="Dr. Sarah Johnson">
+                            </div>
+                            <div class="doctor-content">
+                                <h4>Dr. Sarah Johnson</h4>
+                                <div class="doctor-specialty">General Physician</div>
+                                <div class="doctor-experience">
+                                    <i class="fas fa-briefcase"></i> 8+ years experience
+                                </div>
+                                <div class="doctor-schedule">
+                                    <i class="fas fa-calendar-alt"></i> Mon-Fri: 9:00 AM - 5:00 PM
+                                </div>
+                                <a href="doctor-profile.html?doctor=dr-johnson" class="btn btn-outline btn-sm">View
+                                    Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews Tab -->
+                <div class="tab-pane" id="reviews">
+                    <div class="reviews-header">
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-number">4.5</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="review-count">Based on 128 reviews</div>
+                            </div>
+                            <div class="rating-breakdown">
+                                <div class="rating-bar">
+                                    <div class="rating-label">5 Stars</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 70%;"></div>
+                                    </div>
+                                    <div class="rating-percent">70%</div>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-label">4 Stars</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 20%;"></div>
+                                    </div>
+                                    <div class="rating-percent">20%</div>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-label">3 Stars</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 7%;"></div>
+                                    </div>
+                                    <div class="rating-percent">7%</div>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-label">2 Stars</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 2%;"></div>
+                                    </div>
+                                    <div class="rating-percent">2%</div>
+                                </div>
+                                <div class="rating-bar">
+                                    <div class="rating-label">1 Star</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 1%;"></div>
+                                    </div>
+                                    <div class="rating-percent">1%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="write-review.html?clinic=mediplus" class="btn btn-primary">Write a Review</a>
+                    </div>
+
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-image">
+                                        <img src="images/user1.jpg" alt="Sarah Johnson">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Sarah Johnson</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="review-date">April 15, 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>I had an excellent experience at MediPlus Center. Dr. Williams was very thorough and
+                                    took the time to explain my condition and treatment options. The staff was friendly
+                                    and professional, and the facility was clean and modern. I was able to get all my
+                                    tests done in one place, which was very convenient. Highly recommend!</p>
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-image">
+                                        <img src="images/user2.jpg" alt="Michael Chen">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Michael Chen</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="review-date">April 10, 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>The neurological department at MediPlus Center is top-notch. Dr. Lee was very
+                                    knowledgeable and helped me manage my chronic migraines effectively. The wait time
+                                    was a bit longer than expected, but the quality of care made up for it. The 30%
+                                    discount for first-time patients was also a nice bonus.</p>
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-image">
+                                        <img src="images/user3.jpg" alt="Emily Rodriguez">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Emily Rodriguez</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <div class="review-date">April 5, 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>I've been going to MediPlus Center for regular check-ups for the past two years, and
+                                    I've always had a positive experience. The online appointment booking system is very
+                                    convenient, and they always send reminders. Dr. Johnson is attentive and never
+                                    rushes through appointments. The facility is well-maintained and has ample parking.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Location Tab -->
+                <div class="tab-pane" id="location">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDA0JzI3LjIiTiA3NMKwMDAnMTIuMiJX!5e0!3m2!1sen!2sus!4v1556736782194!5m2!1sen!2sus"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="location-details">
+                        <div class="location-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Medical Avenue<br>Downtown, City<br>ZIP: 10001</p>
+                            </div>
+                        </div>
+
+                        <div class="location-item">
+                            <i class="fas fa-directions"></i>
+                            <div>
+                                <h4>Getting Here</h4>
+                                <p>Located 2 blocks from Downtown Station<br>Bus routes: 15, 22, 37<br>Parking available
+                                    on-site</p>
+                            </div>
+                        </div>
+
+                        <div class="location-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 8:00 PM<br>Saturday: 9:00 AM - 5:00 PM<br>Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking -->
+    <section class="appointment-booking">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <div class="booking-container">
+                <div class="booking-form">
+                    <form id="appointment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appointment-name">Full Name</label>
+                                <input type="text" id="appointment-name" name="name" placeholder="Enter your full name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointment-phone">Phone Number</label>
+                                <input type="tel" id="appointment-phone" name="phone"
+                                    placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appointment-email">Email Address</label>
+                                <input type="email" id="appointment-email" name="email"
+                                    placeholder="Enter your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointment-date">Preferred Date</label>
+                                <input type="date" id="appointment-date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appointment-time">Preferred Time</label>
+                                <input type="time" id="appointment-time" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointment-service">Select Service</label>
+                                <select id="appointment-service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="cardiology">Cardiology</option>
+                                    <option value="neurology">Neurology</option>
+                                    <option value="pulmonology">Pulmonology</option>
+                                    <option value="general-medicine">General Medicine</option>
+                                    <option value="diagnostic-imaging">Diagnostic Imaging</option>
+                                    <option value="laboratory-services">Laboratory Services</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appointment-doctor">Select Doctor</label>
+                                <select id="appointment-doctor" name="doctor" required>
+                                    <option value="">Select a doctor</option>
+                                    <!-- Options will be populated based on selected service -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="appointment-notes">Additional Notes</label>
+                            <textarea id="appointment-notes" name="notes"
+                                placeholder="Enter any additional information or special requests"></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="appointment-terms" name="terms" required>
+                                <label for="appointment-terms">I agree to the terms and conditions</label>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Book Appointment</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="booking-info">
+                    <div class="info-card">
+                        <h3>Appointment Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Please arrive 15 minutes before your scheduled appointment time to complete any necessary
+                                paperwork.</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-id-card"></i>
+                            <p>Bring your ID, insurance card, and any relevant medical records or test results.</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Appointments typically last 30-45 minutes depending on the service.</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-times"></i>
+                            <p>If you need to cancel or reschedule, please do so at least 24 hours in advance.</p>
+                        </div>
+                    </div>
+                    <div class="promo-card">
+                        <div class="promo-badge">Special Offer</div>
+                        <h3>30% OFF</h3>
+                        <p>First-time patients receive <strong>30% off</strong> on their initial consultation.</p>
+                        <p>Use code: <strong>WELCOME30</strong></p>
+                        <p>Valid until: May 30, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Clinics -->
+    <section class="related-clinics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Similar Medical Centers</h2>
+                <p>You might also be interested in these clinics</p>
+            </div>
+            <div class="clinics-grid">
+                <div class="clinic-card">
+                    <div class="clinic-image">
+                        <img src="images/clinic2.jpg" alt="HealthCare Plus">
+                    </div>
+                    <div class="clinic-content">
+                        <div class="clinic-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(95)</span>
+                        </div>
+                        <h3>HealthCare Plus</h3>
+                        <div class="clinic-specialties">
+                            <span>Dentistry</span>
+                            <span>Orthopedics</span>
+                            <span>+2 more</span>
+                        </div>
+                        <div class="clinic-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>456 Health Street, North District</p>
+                        </div>
+                        <div class="clinic-actions">
+                            <a href="clinic-details-2.html" class="btn btn-outline">View Details</a>
+                            <a href="book-appointment.html?clinic=healthcare" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinic-card">
+                    <div class="clinic-image">
+                        <img src="images/clinic3.jpg" alt="City Medical Center">
+                    </div>
+                    <div class="clinic-content">
+                        <div class="clinic-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(76)</span>
+                        </div>
+                        <h3>City Medical Center</h3>
+                        <div class="clinic-specialties">
+                            <span>Pediatrics</span>
+                            <span>Gynecology</span>
+                            <span>+4 more</span>
+                        </div>
+                        <div class="clinic-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>789 City Road, East District</p>
+                        </div>
+                        <div class="clinic-actions">
+                            <a href="clinic-details-3.html" class="btn btn-outline">View Details</a>
+                            <a href="book-appointment.html?clinic=citymedical" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinic-card">
+                    <div class="clinic-image">
+                        <img src="images/clinic4.jpg" alt="Metro Health Clinic">
+                    </div>
+                    <div class="clinic-content">
+                        <div class="clinic-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(112)</span>
+                        </div>
+                        <h3>Metro Health Clinic</h3>
+                        <div class="clinic-specialties">
+                            <span>Dermatology</span>
+                            <span>Ophthalmology</span>
+                            <span>+3 more</span>
+                        </div>
+                        <div class="clinic-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>321 Metro Avenue, West District</p>
+                        </div>
+                        <div class="clinic-actions">
+                            <a href="clinic-details-4.html" class="btn btn-outline">View Details</a>
+                            <a href="book-appointment.html?clinic=metrohealth" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="MediFind Logo">
+                        <span>MediFind</span>
+                    </div>
+                    <p>Your trusted platform for finding the best medical services and healthcare providers in your
+                        area.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="clinics.html">Find Clinics</a></li>
+                        <li><a href="doctors.html">Find Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Health Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Medical Specialties</h3>
+                    <ul>
+                        <li><a href="specialty.html?specialty=cardiology">Cardiology</a></li>
+                        <li><a href="specialty.html?specialty=neurology">Neurology</a></li>
+                        <li><a href="specialty.html?specialty=dentistry">Dentistry</a></li>
+                        <li><a href="specialty.html?specialty=ophthalmology">Ophthalmology</a></li>
+                        <li><a href="specialty.html?specialty=orthopedics">Orthopedics</a></li>
+                        <li><a href="specialty.html?specialty=pediatrics">Pediatrics</a></li>
+                        <li><a href="specialty.html?specialty=gynecology">Gynecology</a></li>
+                        <li><a href="specialties.html">View All Specialties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Medical Plaza, Downtown<br>City, Country</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@medifind.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 9:00 AM - 1:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 MediFind. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

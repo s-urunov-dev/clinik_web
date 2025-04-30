@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediFind - Medical Centers Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-links">
+                    <div class="left-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="right-links">
+                        <a href="#" class="language"><i class="fas fa-globe"></i> English</a>
+                        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="MediFind Logo">
+                        <span>MediFind</span>
+                    </a>
+                </div>
+                <div class="header-title">
+                    <h1>Medical Centers & Clinics Directory</h1>
+                </div>
+                <div class="header-buttons">
+                    <a href="add-clinic.html" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Add Your
+                        Clinic</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" id="search-input" placeholder="Search for clinics, doctors, or services...">
+                <div class="location-selector">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select id="location-select">
+                        <option value="">All Locations</option>
+                        <option value="downtown">Downtown</option>
+                        <option value="north">North District</option>
+                        <option value="east">East District</option>
+                        <option value="west">West District</option>
+                        <option value="south">South District</option>
+                    </select>
+                </div>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Banner -->
+    <section class="featured-banner">
+        <div class="container">
+            <div class="banner">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <h2>Need Medical Assistance?</h2>
+                        <p>Find the best specialists in your area</p>
+                        <div class="banner-stats">
+                            <div class="stat">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-text">Clinics</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-text">Doctors</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-text">Specialties</span>
+                            </div>
+                        </div>
+                        <a href="book-appointment.html" class="btn btn-light">Book Appointment</a>
+                    </div>
+                    <div class="banner-image">
+                        <img src="images/doctor.png" alt="Doctor">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Medical Specialties</h2>
+                <p>Find specialists by category</p>
+            </div>
+            <div class="categories-grid">
+                <a href="specialty.html?specialty=cardiology" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Cardiology</h3>
+                    <p>42 Specialists</p>
+                </a>
+                <a href="specialty.html?specialty=neurology" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurology</h3>
+                    <p>38 Specialists</p>
+                </a>
+                <a href="specialty.html?specialty=dentistry" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Dentistry</h3>
+                    <p>65 Specialists</p>
+                </a>
+                <a href="specialty.html?specialty=ophthalmology" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Ophthalmology</h3>
+                    <p>29 Specialists</p>
+                </a>
+                <a href="specialty.html?specialty=orthopedics" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Orthopedics</h3>
+                    <p>47 Specialists</p>
+                </a>
+                <a href="specialty.html?specialty=pediatrics" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Pediatrics</h3>
+                    <p>53 Specialists</p>
+                </a>
+                <a href="specialty.html?specialty=gynecology" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                    <h3>Gynecology</h3>
+                    <p>36 Specialists</p>
+                </a>
+                <a href="specialties.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-plus-square"></i>
+                    </div>
+                    <h3>More</h3>
+                    <p>View All</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Clinics -->
+    <section class="featured-clinics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Rated Medical Centers</h2>
+                <p>Discover the best clinics in your area</p>
+                <div class="view-all">
+                    <a href="clinics.html">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="clinics-grid">
+                <div class="clinic-card">
+                    <div class="clinic-badge">Featured</div>
+                    <div class="clinic-image">
+                        <img src="images/clinic1.jpg" alt="MediPlus Center">
+                    </div>
+                    <div class="clinic-content">
+                        <div class="clinic-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <h3>MediPlus Center</h3>
+                        <div class="clinic-specialties">
+                            <span>Cardiology</span>
+                            <span>Neurology</span>
+                            <span>+3 more</span>
+                        </div>
+                        <div class="clinic-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Medical Avenue, Downtown</p>
+                        </div>
+                        <div class="clinic-promo">
+                            <span class="discount">30% OFF</span>
+                            <span class="promo-text">on first consultation</span>
+                        </div>
+                        <div class="clinic-actions">
+                            <a href="clinic-details.html" class="btn btn-outline">View Details</a>
+                            <a href="book-appointment.html?clinic=mediplus" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinic-card">
+                    <div class="clinic-image">
+                        <img src="images/clinic2.jpg" alt="HealthCare Plus">
+                    </div>
+                    <div class="clinic-content">
+                        <div class="clinic-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(95)</span>
+                        </div>
+                        <h3>HealthCare Plus</h3>
+                        <div class="clinic-specialties">
+                            <span>Dentistry</span>
+                            <span>Orthopedics</span>
+                            <span>+2 more</span>
+                        </div>
+                        <div class="clinic-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>456 Health Street, North District</p>
+                        </div>
+                        <div class="clinic-promo">
+                            <span class="discount">50% OFF</span>
+                            <span class="promo-text">on dental checkup</span>
+                        </div>
+                        <div class="clinic-actions">
+                            <a href="clinic-details-2.html" class="btn btn-outline">View Details</a>
+                            <a href="book-appointment.html?clinic=healthcare" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinic-card">
+                    <div class="clinic-image">
+                        <img src="images/clinic3.jpg" alt="City Medical Center">
+                    </div>
+                    <div class="clinic-content">
+                        <div class="clinic-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(76)</span>
+                        </div>
+                        <h3>City Medical Center</h3>
+                        <div class="clinic-specialties">
+                            <span>Pediatrics</span>
+                            <span>Gynecology</span>
+                            <span>+4 more</span>
+                        </div>
+                        <div class="clinic-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>789 City Road, East District</p>
+                        </div>
+                        <div class="clinic-promo">
+                            <span class="discount">20% OFF</span>
+                            <span class="promo-text">on all services</span>
+                        </div>
+                        <div class="clinic-actions">
+                            <a href="clinic-details-3.html" class="btn btn-outline">View Details</a>
+                            <a href="book-appointment.html?clinic=citymedical" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Special Offers & Promotions</h2>
+                <p>Limited time discounts and special packages</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">Limited Time</div>
+                    <div class="offer-content">
+                        <h3>50% OFF</h3>
+                        <h4>Complete Health Checkup</h4>
+                        <p>Comprehensive health assessment including blood tests, ECG, and specialist consultation.</p>
+                        <div class="offer-clinic">
+                            <img src="images/clinic-logo1.png" alt="MediPlus Logo">
+                            <span>MediPlus Center</span>
+                        </div>
+                        <div class="offer-validity">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Valid until: May 30, 2025</span>
+                        </div>
+                        <a href="offers.html?offer=health-checkup" class="btn btn-primary">Get Offer</a>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">New Patients</div>
+                    <div class="offer-content">
+                        <h3>30% OFF</h3>
+                        <h4>Dental Care Package</h4>
+                        <p>Complete dental checkup, cleaning, and consultation with experienced dentists.</p>
+                        <div class="offer-clinic">
+                            <img src="images/clinic-logo2.png" alt="HealthCare Plus Logo">
+                            <span>HealthCare Plus</span>
+                        </div>
+                        <div class="offer-validity">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Valid until: June 15, 2025</span>
+                        </div>
+                        <a href="offers.html?offer=dental-care" class="btn btn-primary">Get Offer</a>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">Family Package</div>
+                    <div class="offer-content">
+                        <h3>40% OFF</h3>
+                        <h4>Family Health Package</h4>
+                        <p>Comprehensive health checkups for the entire family with personalized consultations.</p>
+                        <div class="offer-clinic">
+                            <img src="images/clinic-logo3.png" alt="City Medical Center Logo">
+                            <span>City Medical Center</span>
+                        </div>
+                        <div class="offer-validity">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Valid until: July 10, 2025</span>
+                        </div>
+                        <a href="offers.html?offer=family-health" class="btn btn-primary">Get Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Articles -->
+    <section class="health-articles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Health Articles</h2>
+                <p>Stay informed with the latest health tips and medical news</p>
+                <div class="view-all">
+                    <a href="blog.html">View All Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="images/article1.jpg" alt="Heart Health">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-category">Cardiology</div>
+                        <h3>10 Tips for Better Heart Health</h3>
+                        <p>Learn simple lifestyle changes that can significantly improve your heart health and reduce
+                            the risk of cardiovascular diseases.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> April 25, 2025</span>
+                            <span><i class="far fa-eye"></i> 1,245 views</span>
+                        </div>
+                        <a href="article.html?id=heart-health" class="read-more">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="images/article2.jpg" alt="Mental Health">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-category">Mental Health</div>
+                        <h3>Managing Stress in Modern Life</h3>
+                        <p>Discover effective strategies for managing stress and anxiety in today's fast-paced world and
+                            improve your mental wellbeing.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> April 20, 2025</span>
+                            <span><i class="far fa-eye"></i> 987 views</span>
+                        </div>
+                        <a href="article.html?id=stress-management" class="read-more">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="images/article3.jpg" alt="Nutrition">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-category">Nutrition</div>
+                        <h3>Balanced Diet for Optimal Health</h3>
+                        <p>Learn about the importance of a balanced diet and how proper nutrition can help prevent
+                            diseases and improve overall health.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> April 15, 2025</span>
+                            <span><i class="far fa-eye"></i> 856 views</span>
+                        </div>
+                        <a href="article.html?id=balanced-diet" class="read-more">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Users Say</h2>
+                <p>Experiences shared by patients</p>
+            </div>
+            <div class="testimonial-slider" id="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Finding the right specialist was so easy with MediFind. I booked an appointment with a
+                            cardiologist and received excellent care. The discount offered through the platform was an
+                            added bonus!</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/user1.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Patient at MediPlus Center</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>The dental package I found on MediFind saved me a lot of money. The clinic was top-notch and
+                            the staff was very professional. I've recommended this platform to all my friends and
+                            family.</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/user2.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Patient at HealthCare Plus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>As a mother of three, finding good pediatricians is essential. MediFind helped me locate a
+                            great children's clinic with excellent doctors. The family package was perfect for our needs
+                            and budget.</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/user3.jpg" alt="Emily Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Patient at City Medical Center</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button id="prev-testimonial" class="testimonial-control"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+                <button id="next-testimonial" class="testimonial-control"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download -->
+    <section class="app-download">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text">
+                    <h2>Download Our Mobile App</h2>
+                    <p>Get the MediFind app for easier access to medical services on the go. Book appointments, view
+                        medical records, and get exclusive mobile-only offers.</p>
+                    <div class="app-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Easy Appointment Booking</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bell"></i>
+                            <span>Appointment Reminders</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-percent"></i>
+                            <span>Exclusive Mobile Offers</span>
+                        </div>
+                    </div>
+                    <div class="app-buttons">
+                        <a href="app-download.html?platform=android" class="app-button">
+                            <i class="fab fa-google-play"></i>
+                            <div class="app-button-text">
+                                <span>GET IT ON</span>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                        <a href="app-download.html?platform=ios" class="app-button">
+                            <i class="fab fa-apple"></i>
+                            <div class="app-button-text">
+                                <span>Download on the</span>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-image">
+                    <img src="images/app-mockup.png" alt="MediFind Mobile App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Stay updated with the latest health tips, medical news, and exclusive offers from our partner
+                        clinics.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="MediFind Logo">
+                        <span>MediFind</span>
+                    </div>
+                    <p>Your trusted platform for finding the best medical services and healthcare providers in your
+                        area.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="clinics.html">Find Clinics</a></li>
+                        <li><a href="doctors.html">Find Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Health Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Medical Specialties</h3>
+                    <ul>
+                        <li><a href="specialty.html?specialty=cardiology">Cardiology</a></li>
+                        <li><a href="specialty.html?specialty=neurology">Neurology</a></li>
+                        <li><a href="specialty.html?specialty=dentistry">Dentistry</a></li>
+                        <li><a href="specialty.html?specialty=ophthalmology">Ophthalmology</a></li>
+                        <li><a href="specialty.html?specialty=orthopedics">Orthopedics</a></li>
+                        <li><a href="specialty.html?specialty=pediatrics">Pediatrics</a></li>
+                        <li><a href="specialty.html?specialty=gynecology">Gynecology</a></li>
+                        <li><a href="specialties.html">View All Specialties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Medical Plaza, Downtown<br>City, Country</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@medifind.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 9:00 AM - 1:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 MediFind. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

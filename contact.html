@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us - MediFind</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Header Section -->
+	<header>
+		<div class="top-bar">
+			<div class="container">
+				<div class="top-links">
+					<div class="left-links">
+						<a href="index.html">Home</a>
+						<a href="about.html">About Us</a>
+						<a href="services.html">Services</a>
+						<a href="contact.html">Contact</a>
+					</div>
+					<div class="right-links">
+						<a href="#" class="language"><i class="fas fa-globe"></i> English</a>
+						<a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/logo.png" alt="MediFind Logo">
+						<span>MediFind</span>
+					</a>
+				</div>
+				<div class="header-title">
+					<h1>Medical Centers & Clinics Directory</h1>
+				</div>
+				<div class="header-buttons">
+					<a href="add-clinic.html" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Add Your Clinic</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Breadcrumb -->
+	<section class="breadcrumb-section">
+		<div class="container">
+			<div class="breadcrumb">
+				<a href="index.html">Home</a>
+				<i class="fas fa-chevron-right"></i>
+				<span>Contact Us</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Hero Section -->
+	<section class="contact-hero">
+		<div class="container">
+			<div class="section-header">
+				<h1>Contact Us</h1>
+				<p>We're here to help with any questions you may have</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Information -->
+	<section class="contact-info-section">
+		<div class="container">
+			<div class="contact-info-grid">
+				<div class="contact-info-card">
+					<div class="contact-icon">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<h3>Our Location</h3>
+					<p>123 Medical Plaza, Downtown</p>
+					<p>City, Country</p>
+				</div>
+				<div class="contact-info-card">
+					<div class="contact-icon">
+						<i class="fas fa-phone-alt"></i>
+					</div>
+					<h3>Phone Number</h3>
+					<p>+1 (555) 123-4567</p>
+					<p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+				</div>
+				<div class="contact-info-card">
+					<div class="contact-icon">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<h3>Email Address</h3>
+					<p>info@medifind.com</p>
+					<p>support@medifind.com</p>
+				</div>
+				<div class="contact-info-card">
+					<div class="contact-icon">
+						<i class="fas fa-comments"></i>
+					</div>
+					<h3>Live Chat</h3>
+					<p>Available 24/7</p>
+					<a href="#" class="btn btn-outline btn-sm">Start Chat</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form Section -->
+	<section class="contact-form-section">
+		<div class="container">
+			<div class="contact-container">
+				<div class="contact-form">
+					<h2>Send Us a Message</h2>
+					<p>Fill out the form below and we'll get back to you as soon as possible.</p>
+					<form id="contact-form">
+						<div class="form-row">
+							<div class="form-group">
+								<label for="name">Full Name</label>
+								<input type="text" id="name" name="name" placeholder="Enter your full name" required>
+							</div>
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<label for="phone">Phone Number</label>
+								<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+							</div>
+							<div class="form-group">
+								<label for="subject">Subject</label>
+								<select id="subject" name="subject" required>
+									<option value="">Select a subject</option>
+									<option value="general">General Inquiry</option>
+									<option value="support">Technical Support</option>
+									<option value="partnership">Partnership Opportunities</option>
+									<option value="feedback">Feedback</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group full-width">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+						</div>
+						<div class="form-group full-width">
+							<div class="checkbox-group">
+								<input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+								<label for="privacy-policy">I agree to the privacy policy and terms of service</label>
+							</div>
+						</div>
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary">Send Message</button>
+						</div>
+					</form>
+				</div>
+				<div class="contact-map">
+					<h2>Our Location</h2>
+					<div class="map-container">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDA0JzI3LjIiTiA3NMKwMDAnMTIuMiJX!5e0!3m2!1sen!2sus!4v1556736782194!5m2!1sen!2sus"
+							width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Section -->
+	<section class="faq-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Frequently Asked Questions</h2>
+				<p>Find answers to common questions about MediFind</p>
+			</div>
+			<div class="faq-container">
+				<div class="faq-item">
+					<div class="faq-question">
+						<h3>How do I book an appointment through MediFind?</h3>
+						<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="faq-answer">
+						<p>Booking an appointment through MediFind is simple. Search for a clinic or doctor, select your preferred
+							healthcare provider, choose an available time slot, fill in your details, and confirm your booking. You'll
+							receive a confirmation email with all the details of your appointment.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<h3>How can I list my clinic on MediFind?</h3>
+						<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="faq-answer">
+						<p>To list your clinic on MediFind, click on the "Add Your Clinic" button at the top of the page. You'll
+							need to create an account, provide details about your clinic, upload photos, and specify the services you
+							offer. Our team will review your submission and approve it within 48 hours.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<h3>Are the special offers on MediFind legitimate?</h3>
+						<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="faq-answer">
+						<p>Yes, all special offers on MediFind are legitimate and provided directly by the healthcare providers. We
+							verify each offer before it's published on our platform to ensure its authenticity. Always check the
+							validity period and terms of each offer before booking.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<h3>How can I leave a review for a clinic or doctor?</h3>
+						<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="faq-answer">
+						<p>After your appointment, you'll receive an email inviting you to leave a review. Alternatively, you can
+							visit the clinic or doctor's profile page, scroll down to the reviews section, and click on "Write a
+							Review." You'll need to be logged in to your MediFind account to leave a review.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<h3>Is my personal information secure on MediFind?</h3>
+						<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="faq-answer">
+						<p>Yes, we take data security very seriously. All personal information is encrypted and stored securely. We
+							never share your information with third parties without your consent. You can read more about our data
+							protection practices in our Privacy Policy.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Newsletter -->
+	<section class="newsletter">
+		<div class="container">
+			<div class="newsletter-content">
+				<div class="newsletter-text">
+					<h2>Subscribe to Our Newsletter</h2>
+					<p>Stay updated with the latest health tips, medical news, and exclusive offers from our partner clinics.</p>
+				</div>
+				<form class="newsletter-form">
+					<input type="email" placeholder="Enter your email address" required>
+					<button type="submit" class="btn btn-primary">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-column">
+					<div class="footer-logo">
+						<img src="images/logo.png" alt="MediFind Logo">
+						<span>MediFind</span>
+					</div>
+					<p>Your trusted platform for finding the best medical services and healthcare providers in your area.</p>
+					<div class="social-links">
+						<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+					</div>
+				</div>
+				<div class="footer-column">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="clinics.html">Find Clinics</a></li>
+						<li><a href="doctors.html">Find Doctors</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="blog.html">Health Blog</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Medical Specialties</h3>
+					<ul>
+						<li><a href="specialty.html?specialty=cardiology">Cardiology</a></li>
+						<li><a href="specialty.html?specialty=neurology">Neurology</a></li>
+						<li><a href="specialty.html?specialty=dentistry">Dentistry</a></li>
+						<li><a href="specialty.html?specialty=ophthalmology">Ophthalmology</a></li>
+						<li><a href="specialty.html?specialty=orthopedics">Orthopedics</a></li>
+						<li><a href="specialty.html?specialty=pediatrics">Pediatrics</a></li>
+						<li><a href="specialty.html?specialty=gynecology">Gynecology</a></li>
+						<li><a href="specialties.html">View All Specialties</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Contact Information</h3>
+					<ul class="contact-info">
+						<li>
+							<i class="fas fa-map-marker-alt"></i>
+							<span>123 Medical Plaza, Downtown<br>City, Country</span>
+						</li>
+						<li>
+							<i class="fas fa-phone-alt"></i>
+							<span>+1 (555) 123-4567</span>
+						</li>
+						<li>
+							<i class="fas fa-envelope"></i>
+							<span>info@medifind.com</span>
+						</li>
+						<li>
+							<i class="fas fa-clock"></i>
+							<span>Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 9:00 AM - 1:00 PM</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="copyright">
+					<p>&copy; 2025 MediFind. All rights reserved.</p>
+				</div>
+				<div class="footer-links">
+					<a href="privacy.html">Privacy Policy</a>
+					<a href="terms.html">Terms of Service</a>
+					<a href="cookies.html">Cookie Policy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Back to Top Button -->
+	<a href="#" class="back-to-top" id="back-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+
+	<!-- Scripts -->
+	<script src="script.js"></script>
+	<script>
+		// FAQ Toggle
+		document.addEventListener('DOMContentLoaded', function () {
+			const faqItems = document.querySelectorAll('.faq-item')
+
+			faqItems.forEach(item => {
+				const question = item.querySelector('.faq-question')
+				const answer = item.querySelector('.faq-answer')
+				const toggle = item.querySelector('.faq-toggle')
+
+				question.addEventListener('click', function () {
+					answer.classList.toggle('active')
+					toggle.innerHTML = answer.classList.contains('active') ?
+						'<i class="fas fa-minus"></i>' : '<i class="fas fa-plus"></i>'
+				})
+			})
+
+			// Contact Form Submission
+			const contactForm = document.getElementById('contact-form')
+
+			if (contactForm) {
+				contactForm.addEventListener('submit', function (e) {
+					e.preventDefault()
+
+					// Get form values
+					const name = document.getElementById('name').value
+					const email = document.getElementById('email').value
+					const subject = document.getElementById('subject').value
+					const message = document.getElementById('message').value
+
+					// Simple validation
+					if (!name || !email || !subject || !message) {
+						alert('Please fill in all required fields')
+						return
+					}
+
+					// Show success message
+					alert('Thank you for your message! We will get back to you soon.')
+
+					// Reset form
+					contactForm.reset()
+				})
+			}
+		});
+	</script>
+</body>
+
+</html>
